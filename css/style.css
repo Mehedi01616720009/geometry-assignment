@@ -1,0 +1,7 @@
+.get_value_box {
+    display: none;
+}
+
+.get_value_box.active {
+    display: flex;
+}

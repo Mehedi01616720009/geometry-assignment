@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- box icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<section>
+    <!-- header -->
+    <div class="xl:container bg-cyan-200 rounded-md flex justify-between items-center px-7 py-3 mx-4 xl:mx-auto my-5">
+        <div class="">
+            <h4 class="text-3xl font-bold mb-1">Interactive</h4>
+            <p class="text-base text-gray-500">Geometry Genius</p>
+        </div>
+
+        <div class="">
+            <a href="blog.html" class="bg-cyan-500 px-5 py-1.5 rounded-md text-white">Blog</a>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="xl:container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-4 mx-4 xl:mx-auto my-5">
+        <!-- cards container -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 col-span-1 lg:col-span-4">
+            <!-- card -->
+            <div class="geo_card border rounded-md p-4 xl:p-6">
+                <div class="geo_card_content flex justify-center items-center lg:h-28 mb-4 lg:mb-0">
+                    <img src="images/triangle.png" alt="" class="w-1/2">
+                </div>
+
+                <div class="geo_card_data flex flex-col justify-center items-center">
+                    <h5 class="text-lg font-semibold mb-2" id="triangle-title">Triangle</h5>
+
+                    <p class="mb-2">Area (A) = 1/2 * b * h <i class='bx bxs-edit cursor-pointer value_edit'></i></p>
+
+                    <div class="get_value_box items-center gap-1 mb-6">
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="triangle-base" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="b">
+                            <span>cm</span>
+                        </div>
+
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="triangle-height" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="h">
+                            <span>cm</span>
+                        </div>
+
+                        <button class="geo_card_set_value_btn bg-cyan-400 px-2 py-0 rounded text-white">
+                            <i class='bx bx-check'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="triggered_btn bg-cyan-500 w-full px-2 py-2 rounded-md text-white font-semibold" id="triangle-area">
+                    Calculate
+                </button>
+            </div>
+
+            <!-- card -->
+            <div class="geo_card border rounded-md p-4 xl:p-6">
+                <div class="geo_card_content flex justify-center items-center lg:h-28 mb-4 lg:mb-0">
+                    <img src="images/rectangle.png" alt="" class="w-1/2">
+                </div>
+
+                <div class="geo_card_data flex flex-col justify-center items-center">
+                    <h5 class="text-lg font-semibold mb-2" id="rectangle-title">Rectangle</h5>
+
+                    <p class="mb-2">Area (A) = w * l <i class='bx bxs-edit cursor-pointer value_edit'></i></p>
+
+                    <div class="get_value_box items-center gap-1 mb-6">
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="w">
+                            <span>cm</span>
+                        </div>
+
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="l">
+                            <span>cm</span>
+                        </div>
+
+                        <button class="geo_card_set_value_btn bg-cyan-400 px-2 py-0 rounded text-white">
+                            <i class='bx bx-check'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="triggered_btn bg-cyan-500 w-full px-2 py-2 rounded-md text-white font-semibold" id="rectangle-area">
+                    Calculate
+                </button>
+            </div>
+
+            <!-- card -->
+            <div class="geo_card border rounded-md p-4 xl:p-6">
+                <div class="geo_card_content flex justify-center items-center lg:h-28 mb-4 lg:mb-0">
+                    <img src="images/parallelogram.png" alt="" class="w-1/2">
+                </div>
+
+                <div class="geo_card_data flex flex-col justify-center items-center">
+                    <h5 class="text-lg font-semibold mb-2" id="parallelogram-title">Parallelogram</h5>
+
+                    <p class="mb-2">Area (A) = b * h <i class='bx bxs-edit cursor-pointer value_edit'></i></p>
+
+                    <div class="get_value_box items-center gap-1 mb-6">
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="b">
+                            <span>cm</span>
+                        </div>
+
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="h">
+                            <span>cm</span>
+                        </div>
+
+                        <button class="geo_card_set_value_btn bg-cyan-400 px-2 py-0 rounded text-white">
+                            <i class='bx bx-check'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="triggered_btn bg-cyan-500 w-full px-2 py-2 rounded-md text-white font-semibold" id="parallelogram-area">
+                    Calculate
+                </button>
+            </div>
+
+            <!-- card -->
+            <div class="geo_card border rounded-md p-4 xl:p-6">
+                <div class="geo_card_content flex justify-center items-center lg:h-28 mb-4 lg:mb-0">
+                    <img src="images/rhombus.png" alt="" class="w-1/2">
+                </div>
+
+                <div class="geo_card_data flex flex-col justify-center items-center">
+                    <h5 class="text-lg font-semibold mb-2" id="rhombus-title">Rhombus</h5>
+
+                    <p class="mb-2">Area (A) = 1/2 * d<sub>1</sub> * d<sub>2</sub> <i class='bx bxs-edit cursor-pointer value_edit'></i></p>
+
+                    <div class="get_value_box items-center gap-1 mb-6">
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="d1">
+                            <span>cm</span>
+                        </div>
+
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="d2">
+                            <span>cm</span>
+                        </div>
+
+                        <button class="geo_card_set_value_btn bg-cyan-400 px-2 py-0 rounded text-white">
+                            <i class='bx bx-check'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="triggered_btn bg-cyan-500 w-full px-2 py-2 rounded-md text-white font-semibold" id="rhombus-area">
+                    Calculate
+                </button>
+            </div>
+
+            <!-- card -->
+            <div class="geo_card border rounded-md p-4 xl:p-6">
+                <div class="geo_card_content flex justify-center items-center lg:h-28 mb-4 lg:mb-0">
+                    <img src="images/pentagon.png" alt="" class="w-1/2">
+                </div>
+
+                <div class="geo_card_data flex flex-col justify-center items-center">
+                    <h5 class="text-lg font-semibold mb-2" id="pentagon-title">Pentagon</h5>
+
+                    <p class="mb-2">Area (A) = 1/2 * p * b <i class='bx bxs-edit cursor-pointer value_edit'></i></p>
+
+                    <div class="get_value_box items-center gap-1 mb-6">
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="p">
+                            <span>cm</span>
+                        </div>
+
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="b">
+                            <span>cm</span>
+                        </div>
+
+                        <button class="geo_card_set_value_btn bg-cyan-400 px-2 py-0 rounded text-white">
+                            <i class='bx bx-check'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="triggered_btn bg-cyan-500 w-full px-2 py-2 rounded-md text-white font-semibold" id="pentagon-area">
+                    Calculate
+                </button>
+            </div>
+
+            <!-- card -->
+            <div class="geo_card border rounded-md p-4 xl:p-6">
+                <div class="geo_card_content flex justify-center items-center lg:h-28 mb-4 lg:mb-0">
+                    <img src="images/ellipse.png" alt="" class="w-1/2">
+                </div>
+
+                <div class="geo_card_data flex flex-col justify-center items-center">
+                    <h5 class="text-lg font-semibold mb-2" id="ellipse-title">Ellipse</h5>
+
+                    <p class="mb-2">Area (A) = Pi * a * b <i class='bx bxs-edit cursor-pointer value_edit'></i></p>
+
+                    <div class="get_value_box items-center gap-1 mb-6">
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="a">
+                            <span>cm</span>
+                        </div>
+
+                        <div class="flex items-center gap-1">
+                            <input type="text" name="" id="" class="geo_card_get_value bg-gray-200 w-12 rounded px-2" placeholder="b">
+                            <span>cm</span>
+                        </div>
+
+                        <button class="geo_card_set_value_btn bg-cyan-400 px-2 py-0 rounded text-white">
+                            <i class='bx bx-check'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button class="triggered_btn bg-cyan-500 w-full px-2 py-2 rounded-md text-white font-semibold" id="ellipse-area">
+                    Calculate
+                </button>
+            </div>
+        </div>
+
+        <!-- result container -->
+        <div class="col-span-1 lg:col-span-2 border rounded-md p-5 h-max">
+            <h5 class="text-xl underline text-center font-semibold mb-5">Area Calculation</h5>
+
+            <ul class="result_list grid gap-3" id="result-list"></ul>
+        </div>
+    </div>
+</section>
+
+<script src="js/function.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
